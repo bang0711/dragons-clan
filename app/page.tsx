@@ -38,7 +38,7 @@ function HomePage({}: Props) {
             minDistance={50}
             // autoRotate
             enableZoom
-            enablePan={false}
+            enablePan
             maxPolarAngle={Math.PI}
             minPolarAngle={0}
           />
