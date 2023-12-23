@@ -15,7 +15,9 @@ type Props = {};
 function HomePage({}: Props) {
   return (
     <section className="w-full h-screen relative cursor-grab">
-      <Canvas camera={{ position: [40, 30, 0], rotation: [0, Math.PI / 2, 0] }}>
+      <Canvas
+        camera={{ position: [325, 100, 0], rotation: [0, Math.PI / 2, 0] }}
+      >
         <Suspense fallback={<Loader />}>
           <directionalLight position={[1, 1, 1]} intensity={2} />
           <ambientLight intensity={0.5} />
@@ -32,11 +34,11 @@ function HomePage({}: Props) {
             intensity={1}
           />
           <OrbitControls
-            // maxDistance={250}
-            // minDistance={50}
+            maxDistance={250}
+            minDistance={50}
             // autoRotate
             enableZoom
-            // enablePan={false}
+            enablePan={false}
             maxPolarAngle={Math.PI}
             minPolarAngle={0}
           />

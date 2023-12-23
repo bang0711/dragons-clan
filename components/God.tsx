@@ -851,6 +851,109 @@ function God(props: JSX.IntrinsicElements["group"]) {
                 </group>
               </group>
             </group>
+            <group name="Fish_poly">
+              <group name="Fish_body" />
+              <group name="Fish_eye" />
+              <group name="Fish_tail_a" />
+              <group name="Fish_tail_b" />
+              <group name="Fish_tail_c" />
+            </group>
+            <group name="Fish_poly1">
+              <group name="Fish_body_1" />
+              <group name="Fish_eye_1" />
+              <group name="Fish_tail_a_1" />
+              <group name="Fish_tail_b_1" />
+              <group name="Fish_tail_c_1" />
+            </group>
+            <group
+              name="dragon"
+              position={[0, 1150, -1200]}
+              rotation={[0.052, 0, 0]}
+            >
+              <group
+                name="main"
+                position={[0, -10.621, 0]}
+                rotation={[0.036, 0, 0]}
+              >
+                <group name="Dragon_eye" position={[0, 0, 0.298]}>
+                  <mesh
+                    name="Dragon_eye_dragon_eye_center_0"
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Dragon_eye_dragon_eye_center_0.geometry}
+                    material={materials.dragon_eye_center}
+                  />
+                </group>
+                <group name="Dragon_head">
+                  <mesh
+                    name="Dragon_head_dragon_eye_0"
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Dragon_head_dragon_eye_0.geometry}
+                    material={materials.dragon_eye}
+                  />
+                </group>
+                <group name="eye" position={[0, 0.405, -3.697]}>
+                  <group name="Eye_ball_inner" position={[0, -1.715, 6.762]}>
+                    <mesh
+                      name="Eye_ball_inner_dragon_eye_ball_inner_0"
+                      castShadow
+                      receiveShadow
+                      geometry={
+                        nodes.Eye_ball_inner_dragon_eye_ball_inner_0.geometry
+                      }
+                      material={materials.dragon_eye_ball_inner}
+                    />
+                  </group>
+                  <group name="Eye_ball_out" position={[0, -1.715, 9.325]}>
+                    <mesh
+                      name="Eye_ball_out_dragon_eye_ball_out_0"
+                      castShadow
+                      receiveShadow
+                      geometry={
+                        nodes.Eye_ball_out_dragon_eye_ball_out_0.geometry
+                      }
+                      material={materials.dragon_eye_ball_out}
+                    />
+                  </group>
+                  <group name="core">
+                    <group
+                      name="Eyecore_a"
+                      position={[1.088, -80.005, 327.558]}
+                      rotation={[0, 0, 2.723]}
+                    >
+                      <mesh
+                        name="Eyecore_a_dragon_eye_core_0"
+                        castShadow
+                        receiveShadow
+                        geometry={nodes.Eyecore_a_dragon_eye_core_0.geometry}
+                        material={materials.dragon_eye_core}
+                      />
+                    </group>
+                    <group
+                      name="Eyecore_b"
+                      position={[1.088, -80.005, 316.751]}
+                      rotation={[2.723, 0, 0]}
+                    >
+                      <mesh
+                        name="Eyecore_b_dragon_eye_core_0"
+                        castShadow
+                        receiveShadow
+                        geometry={nodes.Eyecore_b_dragon_eye_core_0.geometry}
+                        material={materials.dragon_eye_core}
+                      />
+                    </group>
+                  </group>
+                </group>
+              </group>
+            </group>
+            <group name="Fish_poly2">
+              <group name="Fish_body_2" />
+              <group name="Fish_eye_2" />
+              <group name="Fish_tail_a_2" />
+              <group name="Fish_tail_b_2" />
+              <group name="Fish_tail_c_2" />
+            </group>
           </group>
         </group>
       </group>
